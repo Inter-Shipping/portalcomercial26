@@ -42,9 +42,9 @@
     </style>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body class="bg-slate-900">
+<body class="bg-white">
     <!-- Tela de Login -->
-    <div id="login-screen" style="display: flex; align-items: center; justify-content: center; height: 100vh; background: linear-gradient(to bottom right, #0f172a, #1e293b);">
+    <div id="login-screen" style="display: flex; align-items: center; justify-content: center; height: 100vh; background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb)">
         <div style="text-align: center; color: white; padding: 40px;">
             <svg style="width: 80px; height: 80px; margin: 0 auto 20px; color: #2563eb;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
@@ -384,16 +384,16 @@
             const totalProfitFiltered = filteredFechamentos.reduce((sum, f) => sum + f.profit, 0);
 
             return (
-                <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+                <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50">
                     {/* Header/Navbar */}
-                    <nav className="bg-slate-800/50 backdrop-blur-lg border-b border-slate-700 sticky top-0 z-50">
+                    <nav className="bg-gray-50/50 backdrop-blur-lg border-b border-gray-200 sticky top-0 z-50">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center gap-3">
                                     <Ship className="w-8 h-8 text-blue-600" strokeWidth={2.5} />
                                     <div>
-                                        <h1 className="text-xl font-bold text-white">Portal Comercial</h1>
-                                        <p className="text-xs text-slate-400">Analytics 2026</p>
+                                        <h1 className="text-xl font-bold text-gray-900">Portal Comercial</h1>
+                                        <p className="text-xs text-gray-600">Analytics 2026</p>
                                     </div>
                                 </div>
 
@@ -403,8 +403,8 @@
                                         onClick={() => setPaginaAtiva('home')}
                                         className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'home'
-                                                ? 'bg-blue-600 text-white'
-                                                : 'text-slate-300 hover:bg-slate-700'
+                                                ? 'bg-blue-600 text-gray-900'
+                                                : 'text-gray-700 hover:bg-white'
                                         }`}
                                     >
                                         <Home className="w-4 h-4" />
@@ -414,8 +414,8 @@
                                         onClick={() => setPaginaAtiva('dashboard')}
                                         className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'dashboard'
-                                                ? 'bg-blue-600 text-white'
-                                                : 'text-slate-300 hover:bg-slate-700'
+                                                ? 'bg-blue-600 text-gray-900'
+                                                : 'text-gray-700 hover:bg-white'
                                         }`}
                                     >
                                         <BarChart3 className="w-4 h-4" />
@@ -425,8 +425,8 @@
                                         onClick={() => setPaginaAtiva('analise')}
                                         className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'analise'
-                                                ? 'bg-blue-600 text-white'
-                                                : 'text-slate-300 hover:bg-slate-700'
+                                                ? 'bg-blue-600 text-gray-900'
+                                                : 'text-gray-700 hover:bg-white'
                                         }`}
                                     >
                                         <PieChart className="w-4 h-4" />
@@ -437,7 +437,7 @@
                                 {/* Mobile Menu Button */}
                                 <button
                                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                                    className="md:hidden text-white p-2"
+                                    className="md:hidden text-gray-900 p-2"
                                 >
                                     {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                                 </button>
@@ -450,8 +450,8 @@
                                         onClick={() => { setPaginaAtiva('home'); setMobileMenuOpen(false); }}
                                         className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'home'
-                                                ? 'bg-blue-600 text-white'
-                                                : 'text-slate-300 hover:bg-slate-700'
+                                                ? 'bg-blue-600 text-gray-900'
+                                                : 'text-gray-700 hover:bg-white'
                                         }`}
                                     >
                                         <Home className="w-4 h-4" />
@@ -461,8 +461,8 @@
                                         onClick={() => { setPaginaAtiva('dashboard'); setMobileMenuOpen(false); }}
                                         className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'dashboard'
-                                                ? 'bg-blue-600 text-white'
-                                                : 'text-slate-300 hover:bg-slate-700'
+                                                ? 'bg-blue-600 text-gray-900'
+                                                : 'text-gray-700 hover:bg-white'
                                         }`}
                                     >
                                         <BarChart3 className="w-4 h-4" />
@@ -472,8 +472,8 @@
                                         onClick={() => { setPaginaAtiva('analise'); setMobileMenuOpen(false); }}
                                         className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'analise'
-                                                ? 'bg-blue-600 text-white'
-                                                : 'text-slate-300 hover:bg-slate-700'
+                                                ? 'bg-blue-600 text-gray-900'
+                                                : 'text-gray-700 hover:bg-white'
                                         }`}
                                     >
                                         <PieChart className="w-4 h-4" />
@@ -488,112 +488,112 @@
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                         {/* HOME PAGE */}
                         {paginaAtiva === 'home' && (
-                            <div className="space-y-8 text-white">
+                            <div className="space-y-8 text-gray-900">
                                 {/* Hero Section */}
                                 <div className={`text-center py-12 animate-fade-in`}>
                                     <Ship className="w-20 h-20 text-blue-600 mx-auto mb-4" strokeWidth={2} />
                                     <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
                                         Portal Comercial 2026
                                     </h1>
-                                    <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+                                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                                         Sistema completo de análise e gestão de fechamentos comerciais
                                     </p>
                                 </div>
 
                                 {/* Stats Cards Anuais */}
                                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                                    <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl animate-slide-up">
+                                    <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl animate-slide-up">
                                         <div className="flex items-center justify-between mb-4">
                                             <Target className="w-10 h-10 text-blue-500" />
                                             <span className="text-3xl font-bold text-blue-500">
                                                 {statsGerais.progressoAnual.toFixed(1)}%
                                             </span>
                                         </div>
-                                        <p className="text-slate-300 font-semibold">Meta Anual</p>
-                                        <p className="text-slate-400 text-sm">$ {(statsGerais.totalAno / 1000).toFixed(0)}k de $ {(statsGerais.metaAnual / 1000).toFixed(0)}k</p>
+                                        <p className="text-gray-700 font-semibold">Meta Anual</p>
+                                        <p className="text-gray-600 text-sm">$ {(statsGerais.totalAno / 1000).toFixed(0)}k de $ {(statsGerais.metaAnual / 1000).toFixed(0)}k</p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl animate-slide-up" style={{animationDelay: '0.1s'}}>
+                                    <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl animate-slide-up" style={{animationDelay: '0.1s'}}>
                                         <div className="flex items-center justify-between mb-4">
-                                            <DollarSign className="w-10 h-10 text-green-400" />
-                                            <span className="text-3xl font-bold text-green-400">
+                                            <DollarSign className="w-10 h-10 text-green-600" />
+                                            <span className="text-3xl font-bold text-green-600">
                                                 $ {(statsGerais.totalAno / 1000).toFixed(0)}k
                                             </span>
                                         </div>
-                                        <p className="text-slate-300 font-semibold">Total Profit</p>
-                                        <p className="text-slate-400 text-sm">Acumulado no ano</p>
+                                        <p className="text-gray-700 font-semibold">Total Profit</p>
+                                        <p className="text-gray-600 text-sm">Acumulado no ano</p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl animate-slide-up" style={{animationDelay: '0.2s'}}>
+                                    <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl animate-slide-up" style={{animationDelay: '0.2s'}}>
                                         <div className="flex items-center justify-between mb-4">
-                                            <Package className="w-10 h-10 text-blue-400" />
-                                            <span className="text-3xl font-bold text-blue-400">{statsGerais.totalCntrAno}</span>
+                                            <Package className="w-10 h-10 text-blue-600" />
+                                            <span className="text-3xl font-bold text-blue-600">{statsGerais.totalCntrAno}</span>
                                         </div>
-                                        <p className="text-slate-300 font-semibold">Total CNTR</p>
-                                        <p className="text-slate-400 text-sm">Containers no ano</p>
+                                        <p className="text-gray-700 font-semibold">Total CNTR</p>
+                                        <p className="text-gray-600 text-sm">Containers no ano</p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl animate-slide-up" style={{animationDelay: '0.3s'}}>
+                                    <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl animate-slide-up" style={{animationDelay: '0.3s'}}>
                                         <div className="flex items-center justify-between mb-4">
-                                            <BarChart className="w-10 h-10 text-purple-400" />
-                                            <span className="text-3xl font-bold text-purple-400">{statsGerais.totalFechamentosAno}</span>
+                                            <BarChart className="w-10 h-10 text-purple-600" />
+                                            <span className="text-3xl font-bold text-purple-600">{statsGerais.totalFechamentosAno}</span>
                                         </div>
-                                        <p className="text-slate-300 font-semibold">Fechamentos</p>
-                                        <p className="text-slate-400 text-sm">Total de operações</p>
+                                        <p className="text-gray-700 font-semibold">Fechamentos</p>
+                                        <p className="text-gray-600 text-sm">Total de operações</p>
                                     </div>
                                 </div>
 
                                 {/* Comparativo Mensal */}
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                     <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
                                         <Calendar className="w-8 h-8 text-blue-600" />
                                         Performance Mensal
                                     </h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         {/* Janeiro */}
-                                        <div className="bg-slate-700/50 rounded-xl p-6 border border-slate-600">
+                                        <div className="bg-white/50 rounded-xl p-6 border border-gray-300">
                                             <div className="flex items-center justify-between mb-4">
                                                 <h3 className="text-xl font-bold">Janeiro</h3>
-                                                <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-lg text-sm font-semibold">
+                                                <span className="px-3 py-1 bg-green-500/20 text-green-600 rounded-lg text-sm font-semibold">
                                                     56.6% da meta
                                                 </span>
                                             </div>
                                             <div className="space-y-3">
                                                 <div className="flex justify-between items-center">
-                                                    <span className="text-slate-400">Profit</span>
+                                                    <span className="text-gray-600">Profit</span>
                                                     <span className="text-2xl font-bold text-blue-500">$ 101.8k</span>
                                                 </div>
                                                 <div className="flex justify-between items-center">
-                                                    <span className="text-slate-400">CNTR</span>
-                                                    <span className="text-xl font-bold text-blue-400">295</span>
+                                                    <span className="text-gray-600">CNTR</span>
+                                                    <span className="text-xl font-bold text-blue-600">295</span>
                                                 </div>
                                                 <div className="flex justify-between items-center">
-                                                    <span className="text-slate-400">Fechamentos</span>
-                                                    <span className="text-xl font-bold text-white">83</span>
+                                                    <span className="text-gray-600">Fechamentos</span>
+                                                    <span className="text-xl font-bold text-gray-900">83</span>
                                                 </div>
                                             </div>
                                         </div>
 
                                         {/* Fevereiro */}
-                                        <div className="bg-slate-700/50 rounded-xl p-6 border border-slate-600">
+                                        <div className="bg-white/50 rounded-xl p-6 border border-gray-300">
                                             <div className="flex items-center justify-between mb-4">
                                                 <h3 className="text-xl font-bold">Fevereiro</h3>
-                                                <span className="px-3 py-1 bg-red-500/20 text-red-400 rounded-lg text-sm font-semibold">
+                                                <span className="px-3 py-1 bg-red-500/20 text-red-600 rounded-lg text-sm font-semibold">
                                                     15.0% da meta
                                                 </span>
                                             </div>
                                             <div className="space-y-3">
                                                 <div className="flex justify-between items-center">
-                                                    <span className="text-slate-400">Profit</span>
+                                                    <span className="text-gray-600">Profit</span>
                                                     <span className="text-2xl font-bold text-blue-500">$ 27.0k</span>
                                                 </div>
                                                 <div className="flex justify-between items-center">
-                                                    <span className="text-slate-400">CNTR</span>
-                                                    <span className="text-xl font-bold text-blue-400">49</span>
+                                                    <span className="text-gray-600">CNTR</span>
+                                                    <span className="text-xl font-bold text-blue-600">49</span>
                                                 </div>
                                                 <div className="flex justify-between items-center">
-                                                    <span className="text-slate-400">Fechamentos</span>
-                                                    <span className="text-xl font-bold text-white">16</span>
+                                                    <span className="text-gray-600">Fechamentos</span>
+                                                    <span className="text-xl font-bold text-gray-900">16</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -601,37 +601,37 @@
                                 </div>
 
                                 {/* Quick Actions */}
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                     <h2 className="text-2xl font-bold mb-6">Acesso Rápido</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                         <button
                                             onClick={() => setPaginaAtiva('dashboard')}
-                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-blue-600 transition-all group"
+                                            className="flex items-center gap-3 p-4 bg-white/50 rounded-xl border border-gray-300 hover:border-blue-600 transition-all group"
                                         >
                                             <BarChart3 className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />
                                             <div className="text-left">
                                                 <p className="font-semibold">Dashboard</p>
-                                                <p className="text-sm text-slate-400">Análise detalhada por mês</p>
+                                                <p className="text-sm text-gray-600">Análise detalhada por mês</p>
                                             </div>
                                         </button>
                                         <button
                                             onClick={() => setPaginaAtiva('analise')}
-                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-blue-600 transition-all group"
+                                            className="flex items-center gap-3 p-4 bg-white/50 rounded-xl border border-gray-300 hover:border-blue-600 transition-all group"
                                         >
-                                            <PieChart className="w-8 h-8 text-blue-400 group-hover:scale-110 transition-transform" />
+                                            <PieChart className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />
                                             <div className="text-left">
                                                 <p className="font-semibold">Análise Comparativa</p>
-                                                <p className="text-sm text-slate-400">Compare meses e semanas</p>
+                                                <p className="text-sm text-gray-600">Compare meses e semanas</p>
                                             </div>
                                         </button>
                                         <button
                                             onClick={() => { setPaginaAtiva('dashboard'); setActiveView('fechamentos'); }}
-                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-blue-600 transition-all group"
+                                            className="flex items-center gap-3 p-4 bg-white/50 rounded-xl border border-gray-300 hover:border-blue-600 transition-all group"
                                         >
-                                            <Table className="w-8 h-8 text-green-400 group-hover:scale-110 transition-transform" />
+                                            <Table className="w-8 h-8 text-green-600 group-hover:scale-110 transition-transform" />
                                             <div className="text-left">
                                                 <p className="font-semibold">Fechamentos</p>
-                                                <p className="text-sm text-slate-400">Tabela completa de dados</p>
+                                                <p className="text-sm text-gray-600">Tabela completa de dados</p>
                                             </div>
                                         </button>
                                     </div>
@@ -641,15 +641,15 @@
 
                         {/* DASHBOARD PAGE */}
                         {paginaAtiva === 'dashboard' && (
-                            <div className="space-y-8 text-white">
+                            <div className="space-y-8 text-gray-900">
                                 {/* Navegação de Meses */}
                                 <div className="flex gap-4">
                                     <button
                                         onClick={() => { setMesAtivo('janeiro'); setActiveView('visao'); }}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             mesAtivo === 'janeiro' 
-                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-600/50' 
-                                                : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-gray-900 shadow-lg shadow-blue-600/50' 
+                                                : 'bg-white text-gray-700 hover:bg-gray-200'
                                         }`}
                                     >
                                         <Calendar className="w-5 h-5" />
@@ -659,8 +659,8 @@
                                         onClick={() => { setMesAtivo('fevereiro'); setActiveView('visao'); }}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             mesAtivo === 'fevereiro' 
-                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-600/50' 
-                                                : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-gray-900 shadow-lg shadow-blue-600/50' 
+                                                : 'bg-white text-gray-700 hover:bg-gray-200'
                                         }`}
                                     >
                                         <Calendar className="w-5 h-5" />
@@ -669,7 +669,7 @@
                                 </div>
 
                                 {/* Meta Mensal */}
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                     <div className="flex items-center justify-between mb-4">
                                         <div className="flex items-center gap-3">
                                             <Target className="w-8 h-8 text-blue-600" />
@@ -677,24 +677,24 @@
                                         </div>
                                         <div className="text-right">
                                             <p className="text-3xl font-bold text-blue-500">{progressoMeta.toFixed(1)}%</p>
-                                            <p className="text-sm text-slate-400">da meta</p>
+                                            <p className="text-sm text-gray-600">da meta</p>
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-3 gap-4 mb-4">
-                                        <div className="bg-slate-700/50 rounded-xl p-4 text-center">
-                                            <p className="text-slate-400 text-sm mb-1">Meta</p>
-                                            <p className="text-2xl font-bold text-white">$ {(metaMensal / 1000).toFixed(0)}k</p>
+                                        <div className="bg-white/50 rounded-xl p-4 text-center">
+                                            <p className="text-gray-600 text-sm mb-1">Meta</p>
+                                            <p className="text-2xl font-bold text-gray-900">$ {(metaMensal / 1000).toFixed(0)}k</p>
                                         </div>
-                                        <div className="bg-slate-700/50 rounded-xl p-4 text-center">
-                                            <p className="text-slate-400 text-sm mb-1">Realizado</p>
-                                            <p className="text-2xl font-bold text-green-400">$ {(realizadoMes / 1000).toFixed(1)}k</p>
+                                        <div className="bg-white/50 rounded-xl p-4 text-center">
+                                            <p className="text-gray-600 text-sm mb-1">Realizado</p>
+                                            <p className="text-2xl font-bold text-green-600">$ {(realizadoMes / 1000).toFixed(1)}k</p>
                                         </div>
-                                        <div className="bg-slate-700/50 rounded-xl p-4 text-center">
-                                            <p className="text-slate-400 text-sm mb-1">Falta</p>
-                                            <p className="text-2xl font-bold text-red-400">$ {((metaMensal - realizadoMes) / 1000).toFixed(1)}k</p>
+                                        <div className="bg-white/50 rounded-xl p-4 text-center">
+                                            <p className="text-gray-600 text-sm mb-1">Falta</p>
+                                            <p className="text-2xl font-bold text-red-600">$ {((metaMensal - realizadoMes) / 1000).toFixed(1)}k</p>
                                         </div>
                                     </div>
-                                    <div className="relative h-6 bg-slate-700 rounded-full overflow-hidden">
+                                    <div className="relative h-6 bg-white rounded-full overflow-hidden">
                                         <div 
                                             className={`absolute top-0 left-0 h-full rounded-full transition-all duration-2000 ${
                                                 progressoMeta >= 100 ? 'bg-gradient-to-r from-green-500 to-green-400' :
@@ -705,7 +705,7 @@
                                             style={{ width: `${Math.min(progressoMeta, 100)}%` }}
                                         >
                                             <div className="h-full flex items-center justify-end pr-3">
-                                                <span className="text-white text-xs font-bold">$ {realizadoMes.toLocaleString('en-US')}</span>
+                                                <span className="text-gray-900 text-xs font-bold">$ {realizadoMes.toLocaleString('en-US')}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -717,8 +717,8 @@
                                         onClick={() => setActiveView('visao')}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             activeView === 'visao' 
-                                                ? 'bg-blue-600 text-white shadow-lg' 
-                                                : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                                ? 'bg-blue-600 text-gray-900 shadow-lg' 
+                                                : 'bg-white text-gray-700 hover:bg-gray-200'
                                         }`}
                                     >
                                         <BarChart3 className="w-5 h-5" />
@@ -728,8 +728,8 @@
                                         onClick={() => setActiveView('fechamentos')}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             activeView === 'fechamentos' 
-                                                ? 'bg-blue-600 text-white shadow-lg' 
-                                                : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                                ? 'bg-blue-600 text-gray-900 shadow-lg' 
+                                                : 'bg-white text-gray-700 hover:bg-gray-200'
                                         }`}
                                     >
                                         <Table className="w-5 h-5" />
@@ -741,71 +741,71 @@
                                     <div className="space-y-6">
                                         {/* KPIs */}
                                         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                                            <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                                 <div className="flex items-center justify-between mb-4">
-                                                    <Package className="w-10 h-10 text-blue-400" />
-                                                    <span className="text-3xl font-bold text-blue-400">{stats.totalCntr}</span>
+                                                    <Package className="w-10 h-10 text-blue-600" />
+                                                    <span className="text-3xl font-bold text-blue-600">{stats.totalCntr}</span>
                                                 </div>
-                                                <p className="text-slate-300 font-semibold">Total CNTR</p>
-                                                <p className="text-slate-400 text-sm">Containers fechados</p>
+                                                <p className="text-gray-700 font-semibold">Total CNTR</p>
+                                                <p className="text-gray-600 text-sm">Containers fechados</p>
                                             </div>
 
-                                            <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                                 <div className="flex items-center justify-between mb-4">
                                                     <DollarSign className="w-10 h-10 text-blue-500" />
                                                     <span className="text-3xl font-bold text-blue-500">$ {(stats.totalProfit / 1000).toFixed(0)}k</span>
                                                 </div>
-                                                <p className="text-slate-300 font-semibold">Total Profit</p>
-                                                <p className="text-slate-400 text-sm">Receita gerada</p>
+                                                <p className="text-gray-700 font-semibold">Total Profit</p>
+                                                <p className="text-gray-600 text-sm">Receita gerada</p>
                                             </div>
 
-                                            <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                                 <div className="flex items-center justify-between mb-4">
-                                                    <Target className="w-10 h-10 text-green-400" />
-                                                    <span className="text-3xl font-bold text-green-400">{stats.totalFechamentos}</span>
+                                                    <Target className="w-10 h-10 text-green-600" />
+                                                    <span className="text-3xl font-bold text-green-600">{stats.totalFechamentos}</span>
                                                 </div>
-                                                <p className="text-slate-300 font-semibold">Fechamentos</p>
-                                                <p className="text-slate-400 text-sm">Total de operações</p>
+                                                <p className="text-gray-700 font-semibold">Fechamentos</p>
+                                                <p className="text-gray-600 text-sm">Total de operações</p>
                                             </div>
 
-                                            <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                                 <div className="flex items-center justify-between mb-4">
-                                                    <TrendingUp className="w-10 h-10 text-purple-400" />
-                                                    <span className="text-3xl font-bold text-purple-400">$ {Math.round(stats.mediaPorFechamento).toLocaleString('en-US')}</span>
+                                                    <TrendingUp className="w-10 h-10 text-purple-600" />
+                                                    <span className="text-3xl font-bold text-purple-600">$ {Math.round(stats.mediaPorFechamento).toLocaleString('en-US')}</span>
                                                 </div>
-                                                <p className="text-slate-300 font-semibold">Média/Fechamento</p>
-                                                <p className="text-slate-400 text-sm">Ticket médio</p>
+                                                <p className="text-gray-700 font-semibold">Média/Fechamento</p>
+                                                <p className="text-gray-600 text-sm">Ticket médio</p>
                                             </div>
                                         </div>
 
                                         {/* Performance por Semana */}
-                                        <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                        <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                             <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
                                                 <Calendar className="w-8 h-8 text-blue-600" />
                                                 Performance por Semana
                                             </h2>
                                             <div className={`grid grid-cols-1 gap-4 ${mesAtivo === 'janeiro' ? 'md:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-1'}`}>
                                                 {stats.statsPorSemana.map((sem, idx) => (
-                                                    <div key={idx} className="bg-slate-700/50 rounded-xl p-5 border border-slate-600 hover:border-blue-600 transition-all">
+                                                    <div key={idx} className="bg-white/50 rounded-xl p-5 border border-gray-300 hover:border-blue-600 transition-all">
                                                         <div className="flex items-center justify-between mb-3">
                                                             <span className="text-sm font-semibold text-blue-500">{sem.nome}</span>
-                                                            <span className="text-xs text-slate-400">{sem.periodo}</span>
+                                                            <span className="text-xs text-gray-600">{sem.periodo}</span>
                                                         </div>
                                                         <div className="space-y-2">
                                                             <div className="flex justify-between items-center">
-                                                                <span className="text-slate-400 text-sm">CNTR</span>
-                                                                <span className="text-white font-bold">{sem.cntr}</span>
+                                                                <span className="text-gray-600 text-sm">CNTR</span>
+                                                                <span className="text-gray-900 font-bold">{sem.cntr}</span>
                                                             </div>
                                                             <div className="flex justify-between items-center">
-                                                                <span className="text-slate-400 text-sm">Profit</span>
+                                                                <span className="text-gray-600 text-sm">Profit</span>
                                                                 <span className="text-blue-500 font-bold">$ {(sem.profit / 1000).toFixed(1)}k</span>
                                                             </div>
                                                             <div className="flex justify-between items-center">
-                                                                <span className="text-slate-400 text-sm">Fechamentos</span>
-                                                                <span className="text-blue-400 font-bold">{sem.fechamentos}</span>
+                                                                <span className="text-gray-600 text-sm">Fechamentos</span>
+                                                                <span className="text-blue-600 font-bold">{sem.fechamentos}</span>
                                                             </div>
                                                         </div>
-                                                        <div className="mt-3 bg-slate-600 rounded-full h-2 overflow-hidden">
+                                                        <div className="mt-3 bg-gray-200 rounded-full h-2 overflow-hidden">
                                                             <div 
                                                                 className="bg-gradient-to-r from-blue-600 to-blue-500 h-full rounded-full transition-all duration-1000"
                                                                 style={{ width: `${(sem.profit / stats.totalProfit * 100)}%` }}
@@ -818,21 +818,21 @@
 
                                         {/* Top Clientes e Armadores */}
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                            <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                                 <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                                                    <Target className="w-8 h-8 text-blue-400" />
+                                                    <Target className="w-8 h-8 text-blue-600" />
                                                     Top 5 Clientes
                                                 </h2>
                                                 <div className="space-y-4">
                                                     {stats.topClientes.map((cliente, idx) => (
-                                                        <div key={idx} className="flex items-center justify-between p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-blue-500 transition-all">
+                                                        <div key={idx} className="flex items-center justify-between p-4 bg-white/50 rounded-xl border border-gray-300 hover:border-blue-500 transition-all">
                                                             <div className="flex items-center gap-4">
                                                                 <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
-                                                                    <span className="text-blue-400 font-bold">{idx + 1}</span>
+                                                                    <span className="text-blue-600 font-bold">{idx + 1}</span>
                                                                 </div>
                                                                 <div>
-                                                                    <p className="font-semibold text-white">{cliente.cliente}</p>
-                                                                    <p className="text-sm text-slate-400">{cliente.fechamentos} fechamentos • {cliente.cntr} CNTR</p>
+                                                                    <p className="font-semibold text-gray-900">{cliente.cliente}</p>
+                                                                    <p className="text-sm text-gray-600">{cliente.fechamentos} fechamentos • {cliente.cntr} CNTR</p>
                                                                 </div>
                                                             </div>
                                                             <div className="text-right">
@@ -843,21 +843,21 @@
                                                 </div>
                                             </div>
 
-                                            <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                                 <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                                                    <Ship className="w-8 h-8 text-green-400" />
+                                                    <Ship className="w-8 h-8 text-green-600" />
                                                     Top 5 Armadores
                                                 </h2>
                                                 <div className="space-y-4">
                                                     {stats.topArmadores.map((armador, idx) => (
-                                                        <div key={idx} className="flex items-center justify-between p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-green-500 transition-all">
+                                                        <div key={idx} className="flex items-center justify-between p-4 bg-white/50 rounded-xl border border-gray-300 hover:border-green-500 transition-all">
                                                             <div className="flex items-center gap-4">
                                                                 <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
-                                                                    <span className="text-green-400 font-bold">{idx + 1}</span>
+                                                                    <span className="text-green-600 font-bold">{idx + 1}</span>
                                                                 </div>
                                                                 <div>
-                                                                    <p className="font-semibold text-white">{armador.armador}</p>
-                                                                    <p className="text-sm text-slate-400">{armador.fechamentos} fechamentos • {armador.cntr} CNTR</p>
+                                                                    <p className="font-semibold text-gray-900">{armador.armador}</p>
+                                                                    <p className="text-sm text-gray-600">{armador.fechamentos} fechamentos • {armador.cntr} CNTR</p>
                                                                 </div>
                                                             </div>
                                                             <div className="text-right">
@@ -872,7 +872,7 @@
                                 )}
 
                                 {activeView === 'fechamentos' && (
-                                    <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl space-y-6">
+                                    <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl space-y-6">
                                         <h2 className="text-2xl font-bold flex items-center gap-3">
                                             <Table className="w-8 h-8 text-blue-600" />
                                             Fechamentos Detalhados
@@ -880,21 +880,21 @@
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             <div className="relative">
-                                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-600" />
                                                 <input
                                                     type="text"
                                                     placeholder="Buscar por cliente, POL, POD, armador..."
                                                     value={searchTerm}
                                                     onChange={(e) => { setSearchTerm(e.target.value); setCurrentPage(1); }}
-                                                    className="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-600"
+                                                    className="w-full pl-10 pr-4 py-3 bg-white/50 border border-gray-300 rounded-xl text-gray-900 placeholder-slate-400 focus:outline-none focus:border-blue-600"
                                                 />
                                             </div>
                                             <div className="relative">
-                                                <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                                                <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-600" />
                                                 <select
                                                     value={filterSemana}
                                                     onChange={(e) => { setFilterSemana(e.target.value); setCurrentPage(1); }}
-                                                    className="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-blue-600"
+                                                    className="w-full pl-10 pr-4 py-3 bg-white/50 border border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:border-blue-600"
                                                 >
                                                     <option>Todas</option>
                                                     {dadosMes.semanas.map(s => <option key={s.nome}>{s.nome}</option>)}
@@ -902,24 +902,24 @@
                                             </div>
                                         </div>
 
-                                        <div className="grid grid-cols-3 gap-4 p-4 bg-slate-700/30 rounded-xl border border-slate-600">
+                                        <div className="grid grid-cols-3 gap-4 p-4 bg-white/30 rounded-xl border border-gray-300">
                                             <div className="text-center">
-                                                <p className="text-slate-400 text-sm mb-1">Registros</p>
-                                                <p className="text-2xl font-bold text-white">{filteredFechamentos.length}</p>
+                                                <p className="text-gray-600 text-sm mb-1">Registros</p>
+                                                <p className="text-2xl font-bold text-gray-900">{filteredFechamentos.length}</p>
                                             </div>
-                                            <div className="text-center border-l border-r border-slate-600">
-                                                <p className="text-slate-400 text-sm mb-1">Total CNTR</p>
-                                                <p className="text-2xl font-bold text-blue-400">{totalCntrFiltered}</p>
+                                            <div className="text-center border-l border-r border-gray-300">
+                                                <p className="text-gray-600 text-sm mb-1">Total CNTR</p>
+                                                <p className="text-2xl font-bold text-blue-600">{totalCntrFiltered}</p>
                                             </div>
                                             <div className="text-center">
-                                                <p className="text-slate-400 text-sm mb-1">Total Profit</p>
+                                                <p className="text-gray-600 text-sm mb-1">Total Profit</p>
                                                 <p className="text-2xl font-bold text-blue-500">$ {totalProfitFiltered.toLocaleString('en-US')}</p>
                                             </div>
                                         </div>
 
-                                        <div className="overflow-x-auto rounded-xl border border-slate-600">
+                                        <div className="overflow-x-auto rounded-xl border border-gray-300">
                                             <table className="w-full">
-                                                <thead className="bg-slate-700/50">
+                                                <thead className="bg-white/50">
                                                     <tr>
                                                         {[
                                                             { key: 'semana', label: 'Semana' },
@@ -933,7 +933,7 @@
                                                             <th
                                                                 key={col.key}
                                                                 onClick={() => handleSort(col.key)}
-                                                                className="px-4 py-4 text-left text-xs font-semibold text-slate-300 uppercase tracking-wider cursor-pointer hover:bg-slate-600/50"
+                                                                className="px-4 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider cursor-pointer hover:bg-gray-200/50"
                                                             >
                                                                 <div className="flex items-center gap-2">
                                                                     {col.label}
@@ -943,21 +943,21 @@
                                                         ))}
                                                     </tr>
                                                 </thead>
-                                                <tbody className="divide-y divide-slate-700">
+                                                <tbody className="divide-y divide-gray-200">
                                                     {paginatedFechamentos.map((fech, idx) => (
-                                                        <tr key={idx} className="hover:bg-slate-700/30">
+                                                        <tr key={idx} className="hover:bg-white/30">
                                                             <td className="px-4 py-3 text-sm">
                                                                 <span className="px-2 py-1 bg-blue-500/20 text-blue-300 rounded-lg text-xs font-medium">
                                                                     {fech.semana}
                                                                 </span>
                                                             </td>
-                                                            <td className="px-4 py-3 text-sm font-medium text-white">{fech.cliente}</td>
-                                                            <td className="px-4 py-3 text-sm text-slate-300">{fech.pol}</td>
-                                                            <td className="px-4 py-3 text-sm text-slate-300">{fech.pod}</td>
-                                                            <td className="px-4 py-3 text-sm font-semibold text-white">{fech.cntr}</td>
+                                                            <td className="px-4 py-3 text-sm font-medium text-gray-900">{fech.cliente}</td>
+                                                            <td className="px-4 py-3 text-sm text-gray-700">{fech.pol}</td>
+                                                            <td className="px-4 py-3 text-sm text-gray-700">{fech.pod}</td>
+                                                            <td className="px-4 py-3 text-sm font-semibold text-gray-900">{fech.cntr}</td>
                                                             <td className="px-4 py-3 text-sm font-semibold text-blue-500">$ {fech.profit.toLocaleString('en-US')}</td>
                                                             <td className="px-4 py-3 text-sm">
-                                                                <span className="px-2 py-1 bg-slate-600 text-slate-200 rounded-lg text-xs">
+                                                                <span className="px-2 py-1 bg-gray-200 text-slate-200 rounded-lg text-xs">
                                                                     {fech.armador}
                                                                 </span>
                                                             </td>
@@ -969,19 +969,19 @@
 
                                         {totalPages > 1 && (
                                             <div className="flex items-center justify-between">
-                                                <p className="text-sm text-slate-400">Página {currentPage} de {totalPages}</p>
+                                                <p className="text-sm text-gray-600">Página {currentPage} de {totalPages}</p>
                                                 <div className="flex gap-2">
                                                     <button
                                                         onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                                                         disabled={currentPage === 1}
-                                                        className="px-4 py-2 bg-slate-700 rounded-lg hover:bg-slate-600 disabled:opacity-50"
+                                                        className="px-4 py-2 bg-white rounded-lg hover:bg-gray-200 disabled:opacity-50"
                                                     >
                                                         Anterior
                                                     </button>
                                                     <button
                                                         onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                                                         disabled={currentPage === totalPages}
-                                                        className="px-4 py-2 bg-slate-700 rounded-lg hover:bg-slate-600 disabled:opacity-50"
+                                                        className="px-4 py-2 bg-white rounded-lg hover:bg-gray-200 disabled:opacity-50"
                                                     >
                                                         Próxima
                                                     </button>
@@ -995,84 +995,84 @@
 
                         {/* ANÁLISE PAGE */}
                         {paginaAtiva === 'analise' && (
-                            <div className="space-y-8 text-white">
+                            <div className="space-y-8 text-gray-900">
                                 <div className="text-center">
                                     <h1 className="text-4xl font-bold mb-2">Análise Comparativa</h1>
-                                    <p className="text-slate-400">Compare a performance entre meses e identifique tendências</p>
+                                    <p className="text-gray-600">Compare a performance entre meses e identifique tendências</p>
                                 </div>
 
                                 {/* Comparação Janeiro vs Fevereiro */}
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                     <h2 className="text-2xl font-bold mb-6">Janeiro vs Fevereiro</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                        <div className="bg-slate-700/50 rounded-xl p-6 text-center">
-                                            <p className="text-slate-400 text-sm mb-2">Profit Total</p>
+                                        <div className="bg-white/50 rounded-xl p-6 text-center">
+                                            <p className="text-gray-600 text-sm mb-2">Profit Total</p>
                                             <div className="space-y-3">
                                                 <div>
-                                                    <p className="text-xs text-slate-500 mb-1">Janeiro</p>
-                                                    <p className="text-3xl font-bold text-green-400">$101.8k</p>
+                                                    <p className="text-xs text-gray-500 mb-1">Janeiro</p>
+                                                    <p className="text-3xl font-bold text-green-600">$101.8k</p>
                                                 </div>
                                                 <div className="text-3xl text-slate-600">vs</div>
                                                 <div>
-                                                    <p className="text-xs text-slate-500 mb-1">Fevereiro</p>
+                                                    <p className="text-xs text-gray-500 mb-1">Fevereiro</p>
                                                     <p className="text-3xl font-bold text-blue-500">$27.0k</p>
                                                 </div>
                                             </div>
-                                            <p className="mt-4 text-sm text-red-400">↓ 73.5% de queda</p>
+                                            <p className="mt-4 text-sm text-red-600">↓ 73.5% de queda</p>
                                         </div>
 
-                                        <div className="bg-slate-700/50 rounded-xl p-6 text-center">
-                                            <p className="text-slate-400 text-sm mb-2">Containers (CNTR)</p>
+                                        <div className="bg-white/50 rounded-xl p-6 text-center">
+                                            <p className="text-gray-600 text-sm mb-2">Containers (CNTR)</p>
                                             <div className="space-y-3">
                                                 <div>
-                                                    <p className="text-xs text-slate-500 mb-1">Janeiro</p>
-                                                    <p className="text-3xl font-bold text-blue-400">295</p>
+                                                    <p className="text-xs text-gray-500 mb-1">Janeiro</p>
+                                                    <p className="text-3xl font-bold text-blue-600">295</p>
                                                 </div>
                                                 <div className="text-3xl text-slate-600">vs</div>
                                                 <div>
-                                                    <p className="text-xs text-slate-500 mb-1">Fevereiro</p>
-                                                    <p className="text-3xl font-bold text-blue-400">49</p>
+                                                    <p className="text-xs text-gray-500 mb-1">Fevereiro</p>
+                                                    <p className="text-3xl font-bold text-blue-600">49</p>
                                                 </div>
                                             </div>
-                                            <p className="mt-4 text-sm text-red-400">↓ 83.4% de queda</p>
+                                            <p className="mt-4 text-sm text-red-600">↓ 83.4% de queda</p>
                                         </div>
 
-                                        <div className="bg-slate-700/50 rounded-xl p-6 text-center">
-                                            <p className="text-slate-400 text-sm mb-2">Fechamentos</p>
+                                        <div className="bg-white/50 rounded-xl p-6 text-center">
+                                            <p className="text-gray-600 text-sm mb-2">Fechamentos</p>
                                             <div className="space-y-3">
                                                 <div>
-                                                    <p className="text-xs text-slate-500 mb-1">Janeiro</p>
-                                                    <p className="text-3xl font-bold text-purple-400">83</p>
+                                                    <p className="text-xs text-gray-500 mb-1">Janeiro</p>
+                                                    <p className="text-3xl font-bold text-purple-600">83</p>
                                                 </div>
                                                 <div className="text-3xl text-slate-600">vs</div>
                                                 <div>
-                                                    <p className="text-xs text-slate-500 mb-1">Fevereiro</p>
-                                                    <p className="text-3xl font-bold text-purple-400">16</p>
+                                                    <p className="text-xs text-gray-500 mb-1">Fevereiro</p>
+                                                    <p className="text-3xl font-bold text-purple-600">16</p>
                                                 </div>
                                             </div>
-                                            <p className="mt-4 text-sm text-red-400">↓ 80.7% de queda</p>
+                                            <p className="mt-4 text-sm text-red-600">↓ 80.7% de queda</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Insights */}
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
+                                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-300 shadow-xl">
                                     <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
                                         <TrendingUp className="w-8 h-8 text-blue-600" />
                                         Insights e Recomendações
                                     </h2>
                                     <div className="space-y-4">
                                         <div className="bg-red-500/10 border border-red-500/50 rounded-xl p-4">
-                                            <h3 className="font-bold text-red-400 mb-2">⚠️ Atenção: Queda Significativa</h3>
-                                            <p className="text-slate-300">Fevereiro apresenta queda de <strong>73.5%</strong> no profit comparado a Janeiro. É necessário investigar as causas e tomar ações corretivas.</p>
+                                            <h3 className="font-bold text-red-600 mb-2">⚠️ Atenção: Queda Significativa</h3>
+                                            <p className="text-gray-700">Fevereiro apresenta queda de <strong>73.5%</strong> no profit comparado a Janeiro. É necessário investigar as causas e tomar ações corretivas.</p>
                                         </div>
                                         <div className="bg-yellow-500/10 border border-yellow-500/50 rounded-xl p-4">
-                                            <h3 className="font-bold text-yellow-400 mb-2">📊 Meta Mensal</h3>
-                                            <p className="text-slate-300">Janeiro atingiu <strong>56.6%</strong> da meta, enquanto Fevereiro está em apenas <strong>15.0%</strong>. Ações de aceleração são necessárias.</p>
+                                            <h3 className="font-bold text-yellow-600 mb-2">📊 Meta Mensal</h3>
+                                            <p className="text-gray-700">Janeiro atingiu <strong>56.6%</strong> da meta, enquanto Fevereiro está em apenas <strong>15.0%</strong>. Ações de aceleração são necessárias.</p>
                                         </div>
                                         <div className="bg-blue-500/10 border border-blue-500/50 rounded-xl p-4">
-                                            <h3 className="font-bold text-blue-400 mb-2">💡 Oportunidade</h3>
-                                            <p className="text-slate-300">O ticket médio se mantém estável. Focar em aumentar o volume de fechamentos pode trazer resultados rápidos.</p>
+                                            <h3 className="font-bold text-blue-600 mb-2">💡 Oportunidade</h3>
+                                            <p className="text-gray-700">O ticket médio se mantém estável. Focar em aumentar o volume de fechamentos pode trazer resultados rápidos.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1081,44 +1081,44 @@
                     </div>
 
                     {/* Footer */}
-                    <footer className="bg-slate-800/50 border-t border-slate-700 mt-16">
+                    <footer className="bg-gray-50/50 border-t border-gray-200 mt-16">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 <div>
                                     <div className="flex items-center gap-2 mb-4">
                                         <Ship className="w-6 h-6 text-blue-600" />
-                                        <h3 className="text-white font-bold">Portal Comercial</h3>
+                                        <h3 className="text-gray-900 font-bold">Portal Comercial</h3>
                                     </div>
-                                    <p className="text-slate-400 text-sm">
+                                    <p className="text-gray-600 text-sm">
                                         Sistema de análise e gestão de fechamentos comerciais 2026
                                     </p>
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold mb-4">Navegação Rápida</h3>
+                                    <h3 className="text-gray-900 font-bold mb-4">Navegação Rápida</h3>
                                     <div className="space-y-2">
-                                        <button onClick={() => setPaginaAtiva('home')} className="block text-slate-400 hover:text-blue-600 text-sm transition-colors">
+                                        <button onClick={() => setPaginaAtiva('home')} className="block text-gray-600 hover:text-blue-600 text-sm transition-colors">
                                             Início
                                         </button>
-                                        <button onClick={() => setPaginaAtiva('dashboard')} className="block text-slate-400 hover:text-blue-600 text-sm transition-colors">
+                                        <button onClick={() => setPaginaAtiva('dashboard')} className="block text-gray-600 hover:text-blue-600 text-sm transition-colors">
                                             Dashboard
                                         </button>
-                                        <button onClick={() => setPaginaAtiva('analise')} className="block text-slate-400 hover:text-blue-600 text-sm transition-colors">
+                                        <button onClick={() => setPaginaAtiva('analise')} className="block text-gray-600 hover:text-blue-600 text-sm transition-colors">
                                             Análise Comparativa
                                         </button>
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold mb-4">Informações</h3>
-                                    <p className="text-slate-400 text-sm mb-2">
+                                    <h3 className="text-gray-900 font-bold mb-4">Informações</h3>
+                                    <p className="text-gray-600 text-sm mb-2">
                                         Última atualização: {new Date().toLocaleDateString('pt-BR')}
                                     </p>
-                                    <p className="text-slate-400 text-sm">
+                                    <p className="text-gray-600 text-sm">
                                         Desenvolvido com React + Tailwind CSS
                                     </p>
                                 </div>
                             </div>
-                            <div className="border-t border-slate-700 mt-8 pt-8 text-center">
-                                <p className="text-slate-500 text-sm">
+                            <div className="border-t border-gray-200 mt-8 pt-8 text-center">
+                                <p className="text-gray-500 text-sm">
                                     © 2026 Portal Comercial. Todos os direitos reservados.
                                 </p>
                             </div>
