@@ -46,14 +46,14 @@
     <!-- Tela de Login -->
     <div id="login-screen" style="display: flex; align-items: center; justify-content: center; height: 100vh; background: linear-gradient(to bottom right, #0f172a, #1e293b);">
         <div style="text-align: center; color: white; padding: 40px;">
-            <svg style="width: 80px; height: 80px; margin: 0 auto 20px; color: #f97316;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg style="width: 80px; height: 80px; margin: 0 auto 20px; color: #2563eb;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
                 <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"></path>
                 <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"></path>
             </svg>
             <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px; font-family: 'Space Mono', monospace;">Portal Comercial 2026</h1>
             <p style="color: #94a3b8; margin-bottom: 30px; font-size: 1.1rem;">Acesso restrito - Faça login para continuar</p>
-            <button id="login-button" style="background: #f97316; color: white; padding: 14px 40px; border-radius: 10px; border: none; font-weight: 600; cursor: pointer; font-size: 18px; box-shadow: 0 4px 6px rgba(249, 115, 22, 0.3); transition: all 0.3s;" onmouseover="this.style.background='#ea580c'" onmouseout="this.style.background='#f97316'">
+            <button id="login-button" style="background: #2563eb; color: white; padding: 14px 40px; border-radius: 10px; border: none; font-weight: 600; cursor: pointer; font-size: 18px; box-shadow: 0 4px 6px rgba(249, 115, 22, 0.3); transition: all 0.3s;" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
                 Fazer Login
             </button>
         </div>
@@ -390,7 +390,7 @@
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center gap-3">
-                                    <Ship className="w-8 h-8 text-orange-500" strokeWidth={2.5} />
+                                    <Ship className="w-8 h-8 text-blue-600" strokeWidth={2.5} />
                                     <div>
                                         <h1 className="text-xl font-bold text-white">Portal Comercial</h1>
                                         <p className="text-xs text-slate-400">Analytics 2026</p>
@@ -403,7 +403,7 @@
                                         onClick={() => setPaginaAtiva('home')}
                                         className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'home'
-                                                ? 'bg-orange-500 text-white'
+                                                ? 'bg-blue-600 text-white'
                                                 : 'text-slate-300 hover:bg-slate-700'
                                         }`}
                                     >
@@ -414,7 +414,7 @@
                                         onClick={() => setPaginaAtiva('dashboard')}
                                         className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'dashboard'
-                                                ? 'bg-orange-500 text-white'
+                                                ? 'bg-blue-600 text-white'
                                                 : 'text-slate-300 hover:bg-slate-700'
                                         }`}
                                     >
@@ -425,7 +425,7 @@
                                         onClick={() => setPaginaAtiva('analise')}
                                         className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'analise'
-                                                ? 'bg-orange-500 text-white'
+                                                ? 'bg-blue-600 text-white'
                                                 : 'text-slate-300 hover:bg-slate-700'
                                         }`}
                                     >
@@ -450,7 +450,7 @@
                                         onClick={() => { setPaginaAtiva('home'); setMobileMenuOpen(false); }}
                                         className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'home'
-                                                ? 'bg-orange-500 text-white'
+                                                ? 'bg-blue-600 text-white'
                                                 : 'text-slate-300 hover:bg-slate-700'
                                         }`}
                                     >
@@ -461,7 +461,7 @@
                                         onClick={() => { setPaginaAtiva('dashboard'); setMobileMenuOpen(false); }}
                                         className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'dashboard'
-                                                ? 'bg-orange-500 text-white'
+                                                ? 'bg-blue-600 text-white'
                                                 : 'text-slate-300 hover:bg-slate-700'
                                         }`}
                                     >
@@ -472,7 +472,7 @@
                                         onClick={() => { setPaginaAtiva('analise'); setMobileMenuOpen(false); }}
                                         className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                                             paginaAtiva === 'analise'
-                                                ? 'bg-orange-500 text-white'
+                                                ? 'bg-blue-600 text-white'
                                                 : 'text-slate-300 hover:bg-slate-700'
                                         }`}
                                     >
@@ -491,8 +491,8 @@
                             <div className="space-y-8 text-white">
                                 {/* Hero Section */}
                                 <div className={`text-center py-12 animate-fade-in`}>
-                                    <Ship className="w-20 h-20 text-orange-500 mx-auto mb-4" strokeWidth={2} />
-                                    <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                                    <Ship className="w-20 h-20 text-blue-600 mx-auto mb-4" strokeWidth={2} />
+                                    <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
                                         Portal Comercial 2026
                                     </h1>
                                     <p className="text-xl text-slate-400 max-w-2xl mx-auto">
@@ -504,8 +504,8 @@
                                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                                     <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl animate-slide-up">
                                         <div className="flex items-center justify-between mb-4">
-                                            <Target className="w-10 h-10 text-orange-400" />
-                                            <span className="text-3xl font-bold text-orange-400">
+                                            <Target className="w-10 h-10 text-blue-500" />
+                                            <span className="text-3xl font-bold text-blue-500">
                                                 {statsGerais.progressoAnual.toFixed(1)}%
                                             </span>
                                         </div>
@@ -546,7 +546,7 @@
                                 {/* Comparativo Mensal */}
                                 <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
                                     <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                                        <Calendar className="w-8 h-8 text-orange-500" />
+                                        <Calendar className="w-8 h-8 text-blue-600" />
                                         Performance Mensal
                                     </h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -561,7 +561,7 @@
                                             <div className="space-y-3">
                                                 <div className="flex justify-between items-center">
                                                     <span className="text-slate-400">Profit</span>
-                                                    <span className="text-2xl font-bold text-orange-400">$ 101.8k</span>
+                                                    <span className="text-2xl font-bold text-blue-500">$ 101.8k</span>
                                                 </div>
                                                 <div className="flex justify-between items-center">
                                                     <span className="text-slate-400">CNTR</span>
@@ -585,7 +585,7 @@
                                             <div className="space-y-3">
                                                 <div className="flex justify-between items-center">
                                                     <span className="text-slate-400">Profit</span>
-                                                    <span className="text-2xl font-bold text-orange-400">$ 27.0k</span>
+                                                    <span className="text-2xl font-bold text-blue-500">$ 27.0k</span>
                                                 </div>
                                                 <div className="flex justify-between items-center">
                                                     <span className="text-slate-400">CNTR</span>
@@ -606,9 +606,9 @@
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                         <button
                                             onClick={() => setPaginaAtiva('dashboard')}
-                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-orange-500 transition-all group"
+                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-blue-600 transition-all group"
                                         >
-                                            <BarChart3 className="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" />
+                                            <BarChart3 className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />
                                             <div className="text-left">
                                                 <p className="font-semibold">Dashboard</p>
                                                 <p className="text-sm text-slate-400">Análise detalhada por mês</p>
@@ -616,7 +616,7 @@
                                         </button>
                                         <button
                                             onClick={() => setPaginaAtiva('analise')}
-                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-orange-500 transition-all group"
+                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-blue-600 transition-all group"
                                         >
                                             <PieChart className="w-8 h-8 text-blue-400 group-hover:scale-110 transition-transform" />
                                             <div className="text-left">
@@ -626,7 +626,7 @@
                                         </button>
                                         <button
                                             onClick={() => { setPaginaAtiva('dashboard'); setActiveView('fechamentos'); }}
-                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-orange-500 transition-all group"
+                                            className="flex items-center gap-3 p-4 bg-slate-700/50 rounded-xl border border-slate-600 hover:border-blue-600 transition-all group"
                                         >
                                             <Table className="w-8 h-8 text-green-400 group-hover:scale-110 transition-transform" />
                                             <div className="text-left">
@@ -648,7 +648,7 @@
                                         onClick={() => { setMesAtivo('janeiro'); setActiveView('visao'); }}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             mesAtivo === 'janeiro' 
-                                                ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/50' 
+                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-600/50' 
                                                 : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
                                         }`}
                                     >
@@ -659,7 +659,7 @@
                                         onClick={() => { setMesAtivo('fevereiro'); setActiveView('visao'); }}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             mesAtivo === 'fevereiro' 
-                                                ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/50' 
+                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-600/50' 
                                                 : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
                                         }`}
                                     >
@@ -672,11 +672,11 @@
                                 <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
                                     <div className="flex items-center justify-between mb-4">
                                         <div className="flex items-center gap-3">
-                                            <Target className="w-8 h-8 text-orange-500" />
+                                            <Target className="w-8 h-8 text-blue-600" />
                                             <h2 className="text-2xl font-bold">Meta Mensal - {mesAtivo === 'janeiro' ? 'Janeiro' : 'Fevereiro'}</h2>
                                         </div>
                                         <div className="text-right">
-                                            <p className="text-3xl font-bold text-orange-400">{progressoMeta.toFixed(1)}%</p>
+                                            <p className="text-3xl font-bold text-blue-500">{progressoMeta.toFixed(1)}%</p>
                                             <p className="text-sm text-slate-400">da meta</p>
                                         </div>
                                     </div>
@@ -699,7 +699,7 @@
                                             className={`absolute top-0 left-0 h-full rounded-full transition-all duration-2000 ${
                                                 progressoMeta >= 100 ? 'bg-gradient-to-r from-green-500 to-green-400' :
                                                 progressoMeta >= 70 ? 'bg-gradient-to-r from-blue-500 to-blue-400' :
-                                                progressoMeta >= 40 ? 'bg-gradient-to-r from-orange-500 to-orange-400' :
+                                                progressoMeta >= 40 ? 'bg-gradient-to-r from-blue-600 to-blue-500' :
                                                 'bg-gradient-to-r from-red-500 to-red-400'
                                             }`}
                                             style={{ width: `${Math.min(progressoMeta, 100)}%` }}
@@ -717,7 +717,7 @@
                                         onClick={() => setActiveView('visao')}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             activeView === 'visao' 
-                                                ? 'bg-orange-500 text-white shadow-lg' 
+                                                ? 'bg-blue-600 text-white shadow-lg' 
                                                 : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
                                         }`}
                                     >
@@ -728,7 +728,7 @@
                                         onClick={() => setActiveView('fechamentos')}
                                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                                             activeView === 'fechamentos' 
-                                                ? 'bg-orange-500 text-white shadow-lg' 
+                                                ? 'bg-blue-600 text-white shadow-lg' 
                                                 : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
                                         }`}
                                     >
@@ -752,8 +752,8 @@
 
                                             <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
                                                 <div className="flex items-center justify-between mb-4">
-                                                    <DollarSign className="w-10 h-10 text-orange-400" />
-                                                    <span className="text-3xl font-bold text-orange-400">$ {(stats.totalProfit / 1000).toFixed(0)}k</span>
+                                                    <DollarSign className="w-10 h-10 text-blue-500" />
+                                                    <span className="text-3xl font-bold text-blue-500">$ {(stats.totalProfit / 1000).toFixed(0)}k</span>
                                                 </div>
                                                 <p className="text-slate-300 font-semibold">Total Profit</p>
                                                 <p className="text-slate-400 text-sm">Receita gerada</p>
@@ -781,14 +781,14 @@
                                         {/* Performance por Semana */}
                                         <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
                                             <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                                                <Calendar className="w-8 h-8 text-orange-500" />
+                                                <Calendar className="w-8 h-8 text-blue-600" />
                                                 Performance por Semana
                                             </h2>
                                             <div className={`grid grid-cols-1 gap-4 ${mesAtivo === 'janeiro' ? 'md:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-1'}`}>
                                                 {stats.statsPorSemana.map((sem, idx) => (
-                                                    <div key={idx} className="bg-slate-700/50 rounded-xl p-5 border border-slate-600 hover:border-orange-500 transition-all">
+                                                    <div key={idx} className="bg-slate-700/50 rounded-xl p-5 border border-slate-600 hover:border-blue-600 transition-all">
                                                         <div className="flex items-center justify-between mb-3">
-                                                            <span className="text-sm font-semibold text-orange-400">{sem.nome}</span>
+                                                            <span className="text-sm font-semibold text-blue-500">{sem.nome}</span>
                                                             <span className="text-xs text-slate-400">{sem.periodo}</span>
                                                         </div>
                                                         <div className="space-y-2">
@@ -798,7 +798,7 @@
                                                             </div>
                                                             <div className="flex justify-between items-center">
                                                                 <span className="text-slate-400 text-sm">Profit</span>
-                                                                <span className="text-orange-400 font-bold">$ {(sem.profit / 1000).toFixed(1)}k</span>
+                                                                <span className="text-blue-500 font-bold">$ {(sem.profit / 1000).toFixed(1)}k</span>
                                                             </div>
                                                             <div className="flex justify-between items-center">
                                                                 <span className="text-slate-400 text-sm">Fechamentos</span>
@@ -807,7 +807,7 @@
                                                         </div>
                                                         <div className="mt-3 bg-slate-600 rounded-full h-2 overflow-hidden">
                                                             <div 
-                                                                className="bg-gradient-to-r from-orange-500 to-orange-400 h-full rounded-full transition-all duration-1000"
+                                                                className="bg-gradient-to-r from-blue-600 to-blue-500 h-full rounded-full transition-all duration-1000"
                                                                 style={{ width: `${(sem.profit / stats.totalProfit * 100)}%` }}
                                                             />
                                                         </div>
@@ -836,7 +836,7 @@
                                                                 </div>
                                                             </div>
                                                             <div className="text-right">
-                                                                <p className="text-xl font-bold text-orange-400">$ {(cliente.profit / 1000).toFixed(1)}k</p>
+                                                                <p className="text-xl font-bold text-blue-500">$ {(cliente.profit / 1000).toFixed(1)}k</p>
                                                             </div>
                                                         </div>
                                                     ))}
@@ -861,7 +861,7 @@
                                                                 </div>
                                                             </div>
                                                             <div className="text-right">
-                                                                <p className="text-xl font-bold text-orange-400">$ {(armador.profit / 1000).toFixed(1)}k</p>
+                                                                <p className="text-xl font-bold text-blue-500">$ {(armador.profit / 1000).toFixed(1)}k</p>
                                                             </div>
                                                         </div>
                                                     ))}
@@ -874,7 +874,7 @@
                                 {activeView === 'fechamentos' && (
                                     <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl space-y-6">
                                         <h2 className="text-2xl font-bold flex items-center gap-3">
-                                            <Table className="w-8 h-8 text-orange-500" />
+                                            <Table className="w-8 h-8 text-blue-600" />
                                             Fechamentos Detalhados
                                         </h2>
 
@@ -886,7 +886,7 @@
                                                     placeholder="Buscar por cliente, POL, POD, armador..."
                                                     value={searchTerm}
                                                     onChange={(e) => { setSearchTerm(e.target.value); setCurrentPage(1); }}
-                                                    className="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-orange-500"
+                                                    className="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-600"
                                                 />
                                             </div>
                                             <div className="relative">
@@ -894,7 +894,7 @@
                                                 <select
                                                     value={filterSemana}
                                                     onChange={(e) => { setFilterSemana(e.target.value); setCurrentPage(1); }}
-                                                    className="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-orange-500"
+                                                    className="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-blue-600"
                                                 >
                                                     <option>Todas</option>
                                                     {dadosMes.semanas.map(s => <option key={s.nome}>{s.nome}</option>)}
@@ -913,7 +913,7 @@
                                             </div>
                                             <div className="text-center">
                                                 <p className="text-slate-400 text-sm mb-1">Total Profit</p>
-                                                <p className="text-2xl font-bold text-orange-400">$ {totalProfitFiltered.toLocaleString('en-US')}</p>
+                                                <p className="text-2xl font-bold text-blue-500">$ {totalProfitFiltered.toLocaleString('en-US')}</p>
                                             </div>
                                         </div>
 
@@ -955,7 +955,7 @@
                                                             <td className="px-4 py-3 text-sm text-slate-300">{fech.pol}</td>
                                                             <td className="px-4 py-3 text-sm text-slate-300">{fech.pod}</td>
                                                             <td className="px-4 py-3 text-sm font-semibold text-white">{fech.cntr}</td>
-                                                            <td className="px-4 py-3 text-sm font-semibold text-orange-400">$ {fech.profit.toLocaleString('en-US')}</td>
+                                                            <td className="px-4 py-3 text-sm font-semibold text-blue-500">$ {fech.profit.toLocaleString('en-US')}</td>
                                                             <td className="px-4 py-3 text-sm">
                                                                 <span className="px-2 py-1 bg-slate-600 text-slate-200 rounded-lg text-xs">
                                                                     {fech.armador}
@@ -1015,7 +1015,7 @@
                                                 <div className="text-3xl text-slate-600">vs</div>
                                                 <div>
                                                     <p className="text-xs text-slate-500 mb-1">Fevereiro</p>
-                                                    <p className="text-3xl font-bold text-orange-400">$27.0k</p>
+                                                    <p className="text-3xl font-bold text-blue-500">$27.0k</p>
                                                 </div>
                                             </div>
                                             <p className="mt-4 text-sm text-red-400">↓ 73.5% de queda</p>
@@ -1058,7 +1058,7 @@
                                 {/* Insights */}
                                 <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 border border-slate-600 shadow-xl">
                                     <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                                        <TrendingUp className="w-8 h-8 text-orange-500" />
+                                        <TrendingUp className="w-8 h-8 text-blue-600" />
                                         Insights e Recomendações
                                     </h2>
                                     <div className="space-y-4">
@@ -1086,7 +1086,7 @@
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 <div>
                                     <div className="flex items-center gap-2 mb-4">
-                                        <Ship className="w-6 h-6 text-orange-500" />
+                                        <Ship className="w-6 h-6 text-blue-600" />
                                         <h3 className="text-white font-bold">Portal Comercial</h3>
                                     </div>
                                     <p className="text-slate-400 text-sm">
@@ -1096,13 +1096,13 @@
                                 <div>
                                     <h3 className="text-white font-bold mb-4">Navegação Rápida</h3>
                                     <div className="space-y-2">
-                                        <button onClick={() => setPaginaAtiva('home')} className="block text-slate-400 hover:text-orange-500 text-sm transition-colors">
+                                        <button onClick={() => setPaginaAtiva('home')} className="block text-slate-400 hover:text-blue-600 text-sm transition-colors">
                                             Início
                                         </button>
-                                        <button onClick={() => setPaginaAtiva('dashboard')} className="block text-slate-400 hover:text-orange-500 text-sm transition-colors">
+                                        <button onClick={() => setPaginaAtiva('dashboard')} className="block text-slate-400 hover:text-blue-600 text-sm transition-colors">
                                             Dashboard
                                         </button>
-                                        <button onClick={() => setPaginaAtiva('analise')} className="block text-slate-400 hover:text-orange-500 text-sm transition-colors">
+                                        <button onClick={() => setPaginaAtiva('analise')} className="block text-slate-400 hover:text-blue-600 text-sm transition-colors">
                                             Análise Comparativa
                                         </button>
                                     </div>
